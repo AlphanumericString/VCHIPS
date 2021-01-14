@@ -30,3 +30,9 @@
 *.exe
 *.out
 *.app
+
+# Target
+VCHIPS
+
+# Reflexion Files
+*.idea

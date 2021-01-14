@@ -59,6 +59,9 @@ namespace vchips {
 		//   implementing sfml in this file will certainly be the last straw...
 		// possibility of sub-classes is very seriously envisioned and should be discussed with tutor.
 		mode = sf::VideoMode(1000, 1000);
+		mw.create(mode, w_title);
+		mw.setVerticalSyncEnabled(true);
+		mw.setFramerateLimit(60);
 	}
 
 	game_core::game_core()
@@ -77,9 +80,6 @@ namespace vchips {
 	{
 		sf::Event event;
 
-		mw.create(mode, "SFML window");
-		mw.setVerticalSyncEnabled(true);
-		mw.setFramerateLimit(60);
 		while (mw.isOpen()) {
 			mw.clear();
 			mw.display();

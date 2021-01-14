@@ -30,6 +30,7 @@ namespace vchips {
 		// graphical vars
 		sf::RenderWindow mw;
 		sf::VideoMode mode;
+		const char *w_title = "VChips";
 		//void event_processing(sf::Event &);
 	};
 }
