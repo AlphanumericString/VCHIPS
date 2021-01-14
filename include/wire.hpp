@@ -9,7 +9,11 @@
 namespace vchips {
 	class wire {
 		public:
-			wire(){};
+			wire(bool &st) { state = st;};
 			~wire(){};
+			bool setState(bool update) { return (state=update);};
+			bool getState(){return (state);} // <- need fix to transmit comput chain...
+		private:
+			bool state;
 	};
 }

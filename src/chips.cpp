@@ -12,6 +12,10 @@
 namespace fs = std::filesystem;
 
 namespace vchips {
+	bool chips::compute_for(int node) {
+		return (wires.at(node)->getState());
+	}
+
 	void my_dump(fs::path p) {
 		std::ifstream file;
 		std::string s;

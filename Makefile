@@ -41,9 +41,9 @@ all:$(NAME)
 $(NAME):$(OBJ)
 	$(CC) $(CPPFLAGS) $(OBJ) -o $(NAME)
 clean:
-	rm $(OBJ)
+	-rm $(OBJ)
 fclean:	clean
-	rm $(NAME)
+	-rm $(NAME)
 re:fclean all
 
 .PHONY: re fclean clean
