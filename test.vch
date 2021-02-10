@@ -1,0 +1,12 @@
+# Adder component
+
+.chipsets:
+input input_a
+input input_b
+output output_a
+or or_gate
+
+.links:
+input_a:1 or_gate:1
+input_b:1 or_gate:2
+or_gate:3 output_a:1
